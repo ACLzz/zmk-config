@@ -25,10 +25,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E             &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LSHFT  &kp A  &kp S  &kp D             &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C             &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LEFT_CONTROL  &mo 2  &kp SPACE    &kp RET  &mo 1  &kp RALT
+&kp TAB     &kp Q  &kp W  &kp E             &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp CAPS    &kp A  &kp S  &kp D             &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHIFT  &kp Z  &kp X  &kp C             &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                          &kp LEFT_CONTROL  &mo 2  &kp SPACE    &kp RET  &mo 1  &kp RALT
             >;
         };
 
@@ -40,18 +40,18 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TILDE  &kp N1           &kp N2       &kp N3    &kp N4      &kp N5         &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &kp BSPC
-&kp LSHFT  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
-&trans     &trans           &trans       &kp PLUS  &kp UNDER   &trans         &trans     &kp MINUS      &kp EQUAL     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
-                                         &trans    &trans      &kp SPACE      &kp RET    &trans         &kp RALT
+&kp TILDE       &kp N1           &kp N2       &kp N3    &kp N4      &kp N5         &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &kp BSPC
+&trans          &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
+&kp LEFT_SHIFT  &trans           &trans       &kp PLUS  &kp UNDER   &trans         &trans     &kp MINUS      &kp EQUAL     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
+                                              &trans    &trans      &kp SPACE      &kp RET    &trans         &kp RALT
             >;
         };
 
         lower_layer {
             bindings = <
 &kp CAPS           &bt BT_CLR       &bt BT_SEL 1     &kp C_MUTE       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp PG_UP  &kp HOME        &kp UP_ARROW    &kp END          &kp PG_DN  &kp DEL
-&kp LS(LEFT_ALT)   &bl BL_TOG       &bl BL_DEC       &bl BL_INC       &trans             &trans             &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans     &trans
-&ext_power EP_TOG  &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFR    &rgb_ug RGB_EFF    &trans     &trans          &trans          &trans           &trans     &soft_off
+&ext_power EP_TOG  &bl BL_TOG       &bl BL_DEC       &bl BL_INC       &trans             &trans             &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans     &trans
+&kp LEFT_SHIFT     &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFR    &rgb_ug RGB_EFF    &trans     &trans          &trans          &trans           &trans     &soft_off
                                                      &trans           &trans             &trans             &trans     &trans          &trans
             >;
         };
