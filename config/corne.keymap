@@ -14,6 +14,15 @@
 &led_strip { chain-length = <27>; };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        return_to_default_layer {
+            bindings = <&sl 0>;
+            key-positions = <41 35>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -58,10 +67,28 @@
 
         functions_layer {
             bindings = <
-&trans  &kp F2  &kp F5  &kp F6  &kp F11  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp F2  &kp F4  &kp F5  &kp F6  &kp F11  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&sl 4   &trans  &trans  &trans  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans   &trans    &trans  &trans  &trans
+            >;
+        };
+
+        special_mode_selector {
+            bindings = <
+&trans  &sl 5   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        repo_layer {
+            bindings = <
+&kp TAB         &kp Q   &kp W   &kp E      &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &kp A   &kp S   &kp D      &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp N1  &kp N2  &kp N3     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &kp ESCAPE
+                                &kp LCTRL  &trans  &kp SPACE    &trans  &trans  &trans
             >;
         };
     };
