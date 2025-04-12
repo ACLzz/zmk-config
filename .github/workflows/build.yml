@@ -3,9 +3,5 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        name: Checkout
-      - uses: ./.github/workflows/build-user-config
-        name: Build
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+

@@ -25,8 +25,8 @@ include:
     shield: corne_right nice_view_adapter nice_view
   - board: nice_nano_v2
     shield: corne_left
-    artifact_name: corne_left_with_leds
+    cmake-args: -DCONFIG_ZMK_RGB_UNDERGLOW=y -DCONFIG_WS2812_STRIP=y
   - board: nice_nano_v2
     shield: corne_right
-    artifact_name: corne_right_with_leds
+    cmake-args: -DCONFIG_ZMK_RGB_UNDERGLOW=y -DCONFIG_WS2812_STRIP=y
 
