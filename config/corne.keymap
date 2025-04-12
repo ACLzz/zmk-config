@@ -51,7 +51,7 @@
 
         lower_layer {
             bindings = <
-&kp CAPS           &bt BT_CLR       &bt BT_SEL 1     &kp C_MUTE       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp PG_UP  &kp HOME        &kp UP_ARROW    &kp END          &kp PG_DN  &kp DEL
+&bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &kp C_MUTE       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp PG_UP  &kp HOME        &kp UP_ARROW    &kp END          &kp PG_DN  &kp DEL
 &ext_power EP_TOG  &bl BL_TOG       &bl BL_DEC       &bl BL_INC       &trans             &trans             &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans     &trans
 &kp LEFT_SHIFT     &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFR    &rgb_ug RGB_EFF    &trans     &trans          &trans          &trans           &trans     &soft_off
                                                      &trans           &trans             &trans             &trans     &trans          &trans
@@ -60,28 +60,10 @@
 
         functions_layer {
             bindings = <
-&to 4   &kp F2  &kp F4  &kp F5  &kp F6  &kp F11    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans     &trans  &trans  &trans
-            >;
-        };
-
-        special_mode_selector {
-            bindings = <
-&to 6   &to 5   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &none   &trans    &trans  &none   &trans
-            >;
-        };
-
-        repo_layer {
-            bindings = <
-&kp TAB         &kp Q   &kp W   &kp E      &key_repeat  &trans       &to 0   &trans  &trans  &trans  &trans  &trans
-&trans          &kp A   &kp S   &kp D      &trans       &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp N1  &kp N2  &kp N3     &trans       &trans       &trans  &trans  &trans  &trans  &trans  &kp ESCAPE
-                                &kp LCTRL  &mo 6        &kp SPACE    &trans  &none   &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&to 4   &to 5   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
@@ -91,6 +73,15 @@
 &trans  &kp F18  &kp F19  &kp F20  &kp F21  &kp F22    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp F23  &kp F24  &trans   &trans   &trans     &trans  &trans  &trans  &trans  &trans  &trans
                           &trans   &trans   &trans     &trans  &trans  &trans
+            >;
+        };
+
+        repo_layer {
+            bindings = <
+&kp TAB         &kp Q   &kp W   &kp E      &key_repeat  &trans       &to 0   &trans  &trans  &trans  &trans  &trans
+&trans          &kp A   &kp S   &kp D      &trans       &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp N1  &kp N2  &kp N3     &trans       &trans       &trans  &trans  &trans  &trans  &trans  &kp ESCAPE
+                                &kp LCTRL  &mo 4        &kp SPACE    &trans  &none   &trans
             >;
         };
     };
