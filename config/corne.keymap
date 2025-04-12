@@ -14,14 +14,7 @@
 &led_strip { chain-length = <27>; };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        return_to_default_layer {
-            bindings = <&sl 0>;
-            key-positions = <41 35>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -85,7 +78,7 @@
 
         repo_layer {
             bindings = <
-&kp TAB         &kp Q   &kp W   &kp E      &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB         &kp Q   &kp W   &kp E      &trans  &trans       &to 0   &trans  &trans  &trans  &trans  &trans
 &trans          &kp A   &kp S   &kp D      &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &kp N1  &kp N2  &kp N3     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &kp ESCAPE
                                 &kp LCTRL  &none   &kp SPACE    &trans  &none   &trans
