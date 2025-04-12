@@ -79,7 +79,7 @@
 &trans  &sl 5   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+                        &trans  &none   &trans    &trans  &none   &trans
             >;
         };
 
@@ -88,7 +88,7 @@
 &kp TAB         &kp Q   &kp W   &kp E      &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &trans          &kp A   &kp S   &kp D      &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &kp N1  &kp N2  &kp N3     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &kp ESCAPE
-                                &kp LCTRL  &trans  &kp SPACE    &trans  &trans  &trans
+                                &kp LCTRL  &none   &kp SPACE    &trans  &none   &trans
             >;
         };
     };
