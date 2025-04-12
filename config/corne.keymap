@@ -69,14 +69,14 @@
             bindings = <
 &kp F2  &kp F4  &kp F5  &kp F6  &kp F11  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&sl 4   &trans  &trans  &trans  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&to 4   &trans  &trans  &trans  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans   &trans    &trans  &trans  &trans
             >;
         };
 
         special_mode_selector {
             bindings = <
-&trans  &sl 5   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &to 5   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &none   &trans    &trans  &none   &trans
