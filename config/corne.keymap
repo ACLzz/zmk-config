@@ -78,18 +78,9 @@
         functions_layer {
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&to 4   &to 5   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+&to 4   &to 0   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        soundpad_layer {
-            bindings = <
-&to 0   &kp F13  &kp F14  &kp F15  &kp F16  &kp F17    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F18  &kp F19  &kp F20  &kp F21  &kp F22    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F23  &kp F24  &trans   &trans   &trans     &trans  &trans  &trans  &trans  &trans  &trans
-                          &trans   &trans   &trans     &trans  &trans  &trans
             >;
         };
 
@@ -99,6 +90,15 @@
 &repo_jump      &kp A   &kp S   &kp D      &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &kp N1  &kp N2  &kp N3     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &kp ESCAPE
                                 &kp LCTRL  &mo 4   &kp SPACE    &trans  &none   &trans
+            >;
+        };
+
+        soundpad_layer {
+            bindings = <
+&to 0   &kp F13  &kp F14  &kp F15  &kp F16  &kp F17    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F18  &kp F19  &kp F20  &kp F21  &kp F22    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F23  &kp F24  &trans   &trans   &trans     &trans  &trans  &trans  &trans  &trans  &trans
+                          &trans   &trans   &trans     &trans  &trans  &trans
             >;
         };
     };
