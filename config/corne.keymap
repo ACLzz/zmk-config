@@ -26,7 +26,8 @@
                 <&macro_wait_time 250>,
                 <&macro_tap>,
                 <&kp SPACE &kp Q>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
 
             label = "REPO_JUMP";
         };
