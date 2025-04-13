@@ -78,7 +78,7 @@
         functions_layer {
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&to 4   &to 0   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+&to 5   &to 4   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
@@ -89,7 +89,7 @@
 &kp TAB         &kp Q   &kp W   &kp E      &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &repo_jump      &kp A   &kp S   &kp D      &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &kp N1  &kp N2  &kp N3     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &kp ESCAPE
-                                &kp LCTRL  &mo 4   &kp SPACE    &trans  &none   &trans
+                                &kp LCTRL  &mo 5   &kp SPACE    &trans  &none   &trans
             >;
         };
 
