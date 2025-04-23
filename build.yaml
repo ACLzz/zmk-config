@@ -21,16 +21,6 @@
 include:
   - board: nice_nano_v2
     shield: corne_left nice_view_adapter nice_hent_arts
-    cmake-args: -DCONFIG_ZMK_DISPLAY=y
   - board: nice_nano_v2
     shield: corne_right nice_view_adapter nice_hent_arts
-    cmake-args: -DCONFIG_ZMK_DISPLAY=y
-  - board: nice_nano_v2
-    shield: corne_left
-    cmake-args: -DCONFIG_ZMK_RGB_UNDERGLOW=y -DCONFIG_WS2812_STRIP=y
-  - board: nice_nano_v2
-    shield: corne_right
-    cmake-args: -DCONFIG_ZMK_RGB_UNDERGLOW=y -DCONFIG_WS2812_STRIP=y
-  - board: nice_nano_v2
-    shield: settings_reset
 
