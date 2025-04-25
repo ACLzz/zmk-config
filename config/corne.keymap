@@ -37,7 +37,12 @@
         change_language: change_language {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap_time 100>, <&kp LSHFT &kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LSHFT &kp LEFT_ALT>,
+                <&macro_wait_time 100>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT &kp LEFT_ALT>;
 
             label = "CHANGE_LANGUAGE";
         };
