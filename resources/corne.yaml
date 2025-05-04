@@ -104,7 +104,7 @@ layers:
   - RGB TOG
   - RGB BRD
   - RGB BRI
-  - {t: ▽, type: trans}
+  - RGB EFF
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

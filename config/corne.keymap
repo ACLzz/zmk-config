@@ -100,10 +100,10 @@
 
         kb_control {
             bindings = <
-&bt BT_CLR         &bt BT_NXT       &trans           &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&rgb_ug RGB_TOG    &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&ext_power EP_TOG  &trans           &trans           &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                                     &trans  &trans  &to 0     &trans  &trans  &trans
+&bt BT_CLR         &bt BT_NXT       &trans           &trans           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&rgb_ug RGB_TOG    &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&ext_power EP_TOG  &trans           &trans           &trans           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                                     &trans           &trans  &to 0     &trans  &trans  &trans
             >;
         };
 
