@@ -46,9 +46,9 @@ layers:
   - {type: held}
   - RALT
   lower:
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
+  - {t: kb_control, h: toggle}
+  - {t: ▽, type: trans}
+  - F13
   - MUTE
   - VOLUME DOWN
   - VOLUME UP
@@ -58,12 +58,12 @@ layers:
   - END
   - PG DN
   - DEL
-  - EP TOG
-  - '&bl BL_TOG'
-  - '&bl BL_DEC'
-  - '&bl BL_INC'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F14
+  - F15
+  - F16
+  - PLAY PAUSE
+  - PREVIOUS
+  - NEXT
   - {t: ▽, type: trans}
   - LEFT ARROW
   - DOWN ARROW
@@ -71,11 +71,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LEFT SHIFT
-  - RGB TOG
-  - RGB BRD
-  - RGB BRI
-  - RGB EFR
-  - RGB EFF
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BRI DEC
+  - BRI UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -85,6 +85,49 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  kb_control:
+  - BT CLR
+  - BT NXT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RGB TOG
+  - RGB BRD
+  - RGB BRI
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - EP TOG
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: default, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
