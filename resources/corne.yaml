@@ -89,7 +89,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   kb_control:
-  - BT CLR
+  - '&clear_bt_profile'
   - BT NXT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
