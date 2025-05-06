@@ -1,6 +1,7 @@
 ## v1.1
 - Made one build which supports LEDs and nice!view at the same time
 - Use repo with custom widgets for nice!view
+- Add auto-generating keymap visualization
 - Updated keymap
     - Full media controls on lower_layer
     - Tap-dance caps-lock key (to support caps-lock and shift+alt on one key)
