@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   default: [TAB, Q, W, E, R, T, Y, U, I, O, P, BSPC, '&caps_lock', A, S, D, F, G, H, J, K, L, ;, '''', LSHIFT, Z, X, C, V, B, N, M, ',', ., /, ESC, LEFT CONTROL,
-    lower, SPACE, RET, raise, RALT]
+    lower, SPACE, RET, raise, '&super_key']
   raise:
   - '`'
   - '1'
@@ -44,7 +44,7 @@ layers:
   - SPACE
   - RET
   - {type: held}
-  - RALT
+  - '&super_key'
   lower:
   - {t: kb_control, h: toggle}
   - {t: ▽, type: trans}
@@ -89,9 +89,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   kb_control:
+  - {t: default, h: toggle}
   - '&clear_bt_profile'
   - BT NXT
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -127,7 +127,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: default, h: toggle}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
