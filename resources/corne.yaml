@@ -183,7 +183,7 @@ layers:
   - T
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - UP ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -194,9 +194,9 @@ layers:
   - F
   - G
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LEFT SHIFT

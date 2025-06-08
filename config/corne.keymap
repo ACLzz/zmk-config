@@ -134,10 +134,10 @@
 
         gaming {
             bindings = <
-&kp TAB         &kp Q   &kp W   &kp E      &kp R              &kp T        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_ALT    &kp A   &kp S   &kp D      &kp F              &kp G        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp N1  &kp N2  &kp N3     &kp NUMBER_4       &kp N5       &trans  &trans  &trans  &trans  &trans  &kp ESCAPE
-                                &kp LCTRL  &to_default_layer  &kp SPACE    &trans  &none   &trans
+&kp TAB         &kp Q   &kp W   &kp E      &kp R              &kp T        &trans  &trans          &kp UP_ARROW    &trans           &trans  &trans
+&kp LEFT_ALT    &kp A   &kp S   &kp D      &kp F              &kp G        &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&kp LEFT_SHIFT  &kp N1  &kp N2  &kp N3     &kp NUMBER_4       &kp N5       &trans  &trans          &trans          &trans           &trans  &kp ESCAPE
+                                &kp LCTRL  &to_default_layer  &kp SPACE    &trans  &none           &trans
             >;
         };
     };
