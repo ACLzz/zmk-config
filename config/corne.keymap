@@ -63,6 +63,13 @@
             #binding-cells = <0>;
             bindings = <&none>, <&none>, <&to 0>;
         };
+
+        lower_mouse_layer: lower_mouse_layer {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LOWER_MOUSE_LAYER";
+            #binding-cells = <0>;
+            bindings = <&mo 2>, <&mo 4>;
+        };
     };
 
     keymap {
@@ -76,10 +83,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB     &kp Q  &kp W  &kp E             &kp R  &kp T        &kp Y    &kp U  &kp I       &kp O    &kp P     &kp BSPC
-&caps_lock  &kp A  &kp S  &kp D             &kp F  &kp G        &kp H    &kp J  &kp K       &kp L    &kp SEMI  &kp SQT
-&kp LSHIFT  &kp Z  &kp X  &kp C             &kp V  &kp B        &kp N    &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp ESC
-                          &kp LEFT_CONTROL  &mo 2  &kp SPACE    &kp RET  &mo 1  &super_key
+&kp TAB     &kp Q  &kp W  &kp E             &kp R               &kp T        &kp Y    &kp U  &kp I       &kp O    &kp P     &kp BSPC
+&caps_lock  &kp A  &kp S  &kp D             &kp F               &kp G        &kp H    &kp J  &kp K       &kp L    &kp SEMI  &kp SQT
+&kp LSHIFT  &kp Z  &kp X  &kp C             &kp V               &kp B        &kp N    &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp ESC
+                          &kp LEFT_CONTROL  &lower_mouse_layer  &kp SPACE    &kp RET  &mo 1  &super_key
             >;
         };
 
