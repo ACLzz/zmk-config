@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: corne}
 layers:
-  default: [TAB, Q, W, E, R, T, Y, U, I, O, P, BSPC, '&caps_lock', A, S, D, F, G, H, J, K, L, ;, '''', LSHIFT, Z, X, C, V, B, N, M, ',', ., /, ESC, LEFT CONTROL,
+  default: [TAB, '''', <, '>', P, Y, F, G, C, R, L, BSPC, '&caps_lock', A, O, E, U, I, D, H, T, N, S, '-', LSHIFT, ;, Q, J, K, X, B, M, W, V, Z, ESC, LEFT CONTROL,
     '&lower_mouse_layer', SPACE, RET, raise, '&super_key']
   raise:
   - '`'
@@ -34,7 +34,7 @@ layers:
   - _
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '-'
+  - '?'
   - '='
   - '['
   - ']'
