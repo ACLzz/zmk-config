@@ -71,8 +71,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LEFT SHIFT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F17
+  - F18
   - {t: ▽, type: trans}
   - BRI DEC
   - BRI UP

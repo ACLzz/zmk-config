@@ -123,7 +123,7 @@
             bindings = <
 &to 3           &trans   &kp F13  &kp C_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp PG_UP  &kp HOME        &kp UP_ARROW    &kp END          &kp PG_DN  &kp DEL
 &kp F14         &kp F15  &kp F16  &kp C_PLAY_PAUSE  &kp C_PREVIOUS     &kp C_NEXT         &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans     &trans
-&kp LEFT_SHIFT  &trans   &trans   &trans            &kp C_BRI_DEC      &kp C_BRI_UP       &trans     &trans          &trans          &trans           &trans     &soft_off
+&kp LEFT_SHIFT  &kp F17  &kp F18  &trans            &kp C_BRI_DEC      &kp C_BRI_UP       &trans     &trans          &trans          &trans           &trans     &soft_off
                                   &trans            &trans             &trans             &trans     &trans          &trans
             >;
         };
