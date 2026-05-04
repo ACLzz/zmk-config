@@ -34,13 +34,6 @@
     };
 
     behaviors {
-        caps_lock: caps_lock {
-            compatible = "zmk,behavior-tap-dance";
-            label = "CAPS_LOCK";
-            #binding-cells = <0>;
-            bindings = <&kp CAPSLOCK>, <&change_language>;
-        };
-
         clear_bt_profile: clear_bt_profile {
             compatible = "zmk,behavior-tap-dance";
             label = "CLEAR_BT_PROFILE";
@@ -70,20 +63,6 @@
             #binding-cells = <0>;
             bindings = <&mo 2>, <&mo 4>;
         };
-
-        factorio_ctrl_alt: factorio_ctrl_alt {
-            compatible = "zmk,behavior-tap-dance";
-            label = "FACTORIO_CTRL_ALT";
-            #binding-cells = <0>;
-            bindings = <&kp LCTRL>, <&kp LEFT_ALT>;
-        };
-
-        factorio_reset: factorio_reset {
-            compatible = "zmk,behavior-tap-dance";
-            label = "FACTORIO_RESET";
-            #binding-cells = <0>;
-            bindings = <&kp TAB>, <&kp TAB>, <&to 0>;
-        };
     };
 
     keymap {
@@ -98,8 +77,8 @@
 
             bindings = <
 &kp TAB     &kp Q  &kp W  &kp E             &kp R               &kp T        &kp Y    &kp U  &kp I       &kp O    &kp P     &kp BSPC
-&caps_lock  &kp A  &kp S  &kp D             &kp F               &kp G        &kp H    &kp J  &kp K       &kp L    &kp SEMI  &kp SQT
-&kp LSHIFT  &kp Z  &kp X  &kp C             &kp V               &kp B        &kp N    &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp ESC
+&kp ESCAPE  &kp A  &kp S  &kp D             &kp F               &kp G        &kp H    &kp J  &kp K       &kp L    &kp SEMI  &kp SQT
+&kp LSHIFT  &kp Z  &kp X  &kp C             &kp V               &kp B        &kp N    &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp CAPSLOCK
                           &kp LEFT_CONTROL  &lower_mouse_layer  &kp SPACE    &kp RET  &mo 1  &super_key
             >;
         };
@@ -121,10 +100,10 @@
 
         lower {
             bindings = <
-&to 3           &trans   &kp F13  &kp C_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp PG_UP  &kp HOME        &kp UP_ARROW    &kp END          &kp PG_DN  &kp DEL
-&kp F14         &kp F15  &kp F16  &kp C_PLAY_PAUSE  &kp C_PREVIOUS     &kp C_NEXT         &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans     &trans
-&kp LEFT_SHIFT  &kp F17  &kp F18  &trans            &kp C_BRI_DEC      &kp C_BRI_UP       &trans     &trans          &trans          &trans           &trans     &soft_off
-                                  &trans            &trans             &trans             &trans     &trans          &trans
+&to 3           &trans   &kp F13  &kp C_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp PG_UP       &kp HOME        &none         &kp END          &kp PG_DN  &kp DEL
+&kp F14         &kp F15  &kp F16  &kp C_PLAY_PAUSE  &kp C_PREVIOUS     &kp C_NEXT         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans     &trans
+&kp LEFT_SHIFT  &kp F17  &kp F18  &trans            &kp C_BRI_DEC      &kp C_BRI_UP       &trans          &trans          &trans        &trans           &trans     &soft_off
+                                  &trans            &trans             &trans             &trans          &trans          &trans
             >;
         };
 
@@ -141,7 +120,7 @@
             bindings = <
 &trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans  &trans
 &trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &kp F11  &kp F12  &to 5   &to 6   &trans     &trans  &trans          &trans          &trans           &trans  &trans
+&trans  &kp F11  &kp F12  &to 5   &trans  &trans     &trans  &trans          &trans          &trans           &trans  &trans
                           &trans  &trans  &trans     &trans  &trans          &trans
             >;
         };
@@ -152,15 +131,6 @@
 &kp LEFT_ALT    &kp A   &kp S   &kp D      &kp F              &kp G        &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
 &kp LEFT_SHIFT  &kp N1  &kp N2  &kp N3     &kp NUMBER_4       &kp N5       &trans  &trans          &trans          &trans           &trans  &kp ESCAPE
                                 &kp LCTRL  &to_default_layer  &kp SPACE    &trans  &none           &trans
-            >;
-        };
-
-        factorio {
-            bindings = <
-&factorio_reset  &trans  &trans  &trans              &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans           &trans  &trans  &trans              &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans           &trans  &trans  &trans              &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                 &factorio_ctrl_alt  &mo 1   &trans    &trans  &trans  &trans
             >;
         };
     };
